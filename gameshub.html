@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STREET KINGS — Modded Mobile Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Russo+One&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#0a0b0f; --card:#12141b; --text:#e6e9ef;
+      --primary:#00ffd5; --accent:#ff3b77; --violet:#8b5cf6; --border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:var(--bg); color:var(--text); font-family:Inter,sans-serif}
+
+    header {
+      text-align:center;
+      padding:30px 20px 10px;
+    }
+    .title {
+      font-family:'Russo One',sans-serif;
+      font-size:48px;
+      background:linear-gradient(90deg,#00ffd5,#8b5cf6,#ff3b77);
+      background-size:300%;
+      -webkit-background-clip:text;
+      color:transparent;
+      animation:shimmer 3s infinite linear;
+    }
+    @keyframes shimmer {
+      0% {background-position:0%}
+      100% {background-position:300%}
+    }
+
+    .tagline {
+      text-align:center;
+      font-size:16px;
+      font-weight:600;
+      margin-top:6px;
+      background:linear-gradient(90deg,#00ffd5,#8b5cf6,#ff3b77);
+      -webkit-background-clip:text;
+      color:transparent;
+      animation:shimmer 3s infinite linear;
+    }
+
+    .search-bar {
+      max-width:600px;
+      margin:30px auto;
+      padding:0 20px;
+    }
+    .search-bar input {
+      width:100%;
+      background:#12141b;
+      border:1px solid var(--border);
+      border-radius:12px;
+      padding:12px 14px;
+      color:#eaf0f7;
+      font-size:16px;
+    }
+    .search-bar input::placeholder {
+      color:#7e8795;
+      font-style:italic;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:1fr;
+      gap:20px;
+      padding:20px;
+    }
+    .card {
+      background:linear-gradient(90deg,#00ffd5,#8b5cf6);
+      border-radius:16px;
+      padding:16px;
+      color:#fff;
+    }
+    .card .badge {
+      background:#0f1624;
+      color:#bfeef0;
+      font-weight:700;
+      padding:6px 12px;
+      border-radius:999px;
+      display:inline-block;
+      margin-bottom:10px;
+    }
+    .card img {
+      width:100%;
+      border-radius:12px;
+      margin-bottom:12px;
+    }
+    .card .name {
+      font-size:20px;
+      font-weight:800;
+      margin-bottom:6px;
+    }
+    .card .meta {
+      font-size:14px;
+      color:#e0e0e0;
+      margin-bottom:12px;
+    }
+    .card .tags {
+      display:flex;
+      gap:10px;
+      margin-bottom:12px;
+    }
+    .card .tag {
+      background:#0f1218;
+      border:1px solid #fff;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+    }
+    .card .cta {
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .card .cta a {
+      text-decoration:none;
+      padding:10px 14px;
+      border-radius:12px;
+      font-weight:700;
+      font-size:14px;
+    }
+    .ghost {
+      background:#12141b;
+      color:#fff;
+      border:1px solid #fff;
+    }
+    .primary {
+      background:linear-gradient(90deg,#00ffd5,#8b5cf6);
+      color:#001014;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="title">STREET KINGS</h1>
+    <p class="tagline">Premium modded mobile games • Fast, clean, and bold</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Tafuta game..." />
+  </div>
+
+  <section class="grid">
+    <article class="card">
+      <span class="badge">Action</span>
+      <img src="https://i.postimg.cc/sgg40Tz9/610057-front.jpg" alt="Prototype 2 Mobile" />
+      <div class="name">Prototype 2 Mobile</div>
+      <div class="meta">Version: v1.2.5 • Size: 2.1 GB</div>
+      <div class="tags">
+        <span class="tag">Google Play</span>
+        <span class="tag">Apple</span>
+      </div>
+      <div class="cta">
+        <a href="#" class="ghost">Maelezo</a>
+        <a href="#" class="primary">Download</a>
+      </div>
+    </article>
+  </section>
+  
+  <!-- Game 2 -->
+    <article class="card">
+      <span class="badge">Racing</span>
+      <img src="https://i.ibb.co/wZbqZrWm/Fiyk-DJVdy-9ytqfua-DCBB1-Mm-HNTH.jpg" alt="Need For Speed Mobile" />
+      <div class="name">Need For Speed Mobile</div>
+      <div class="meta">Version: v1.3.0 • Size: 1.2 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 3 -->
+    <article class="card">
+      <span class="badge">Shooter</span>
+      <img src="https://i.ibb.co/4gmNk2V3/unnamed.jpg" alt="Call of Duty Mobile" />
+      <div class="name">Call of Duty Mobile</div>
+      <div class="meta">Version: v1.0.3095 • Size: 2.4 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 4 -->
+    <article class="card">
+      <span class="badge">Sports</span>
+      <img src="https://i.ibb.co/WhRrL4q/e4332432c1be791e1c1d624ebe544f76e2b1bb23b7211424.jpg" alt="REMATCH Mobile" />
+      <div class="name">REMATCH Mobile</div>
+      <div class="meta">Version: v1.16.4 • Size: 800 MB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 5 -->
+    <article class="card">
+      <span class="badge">MOBA</span>
+      <img src="https://i.ibb.co/R976Nd2/lol.jpg" alt="League of Legends Mobile" />
+      <div class="name">League of Legends Mobile</div>
+      <div class="meta">Version: v1.656.386.0 • Size: 3.1 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 6 -->
+    <article class="card">
+      <span class="badge">Adventure</span>
+      <img src="https://i.ibb.co/HDnzRsJ/gow.jpg" alt="God of War Mobile" />
+      <div class="name">God of War Mobile</div>
+      <div class="meta">Version: v1.0.0 • Size: 2.7 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 7 -->
+    <article class="card">
+      <span class="badge">Superhero</span>
+      <img src="https://i.ibb.co/McjvCfj/spiderman2.png" alt="Spider-Man 2 Mobile" />
+      <div class="name">Spider-Man 2 Mobile</div>
+      <div class="meta">Version: v0.32.0.0 • Size: 1.9 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 8 -->
+    <article class="card">
+      <span class="badge">Superhero</span>
+      <img src="https://i.ibb.co/VWmMFDvW/wolvrine.jpg" alt="Wolverine Mobile" />
+      <div class="name">Wolverine Mobile</div>
+      <div class="meta">Version: v1.3.0 • Size: 1.5 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 9 -->
+    <article class="card">
+      <span class="badge">Survival</span>
+      <img src="https://i.ibb.co/tLx5P3D/tlou-1.jpg" alt="The Last of Us Mobile" />
+      <div class="name">The Last of Us Mobile</div>
+      <div class="meta">Version: v1.16.4 • Size: 2.8 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 10 -->
+    <article class="card">
+      <span class="badge">Open World</span>
+      <img src="https://i.ibb.co/n0tBVMs/horizon.jpg" alt="Horizon Zero Dawn Mobile" />
+      <div class="name">Horizon Zero Dawn Mobile</div>
+      <div class="meta">Version: v1.0.3095 • Size: 2.2 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 11 -->
+    <article class="card">
+      <span class="badge">Premium</span>
+      <img src="https://i.ibb.co/kDmVtwv/rdr2-1.jpg" alt="Red Dead Redemption 2 Mobile" />
+      <div class="name">Red Dead Redemption 2 Mobile</div>
+      <div class="meta">Version: v1.656.386.0 • Size: 3.5 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 12 -->
+    <article class="card">
+      <span class="badge">Battle Royale</span>
+      <img src="https://i.ibb.co/W5j9ZXx/fortnite.jpg" alt="Fortnite Mobile" />
+      <div class="name">Fortnite Mobile</div>
+      <div class="meta">Version: v0.32.0.0 • Size: 2.9 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 13 -->
+    <article class="card">
+      <span class="badge">Stealth</span>
+      <img src="https://i.ibb.co/0jfpcKqv/Assassin-s-Creed-III-Game-Cover.jpg" alt="Assassin's Creed Mobile" />
+      <div class="name">Assassin's Creed Mobile</div>
+      <div class="meta">Version: v1.0.0 • Size: 1.8 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 14 -->
+    <article class="card">
+      <span class="badge">MOD</span>
+      <img src="https://i.ibb.co/k92hJwF/roblox.png" alt="Roblox Mod" />
+      <div class="name">Roblox Mod</div>
+      <div class="meta">Version: v1.3.0 • Size: 150 MB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+
+    <!-- Game 15 -->
+    <article class="card">
+      <span class="badge">Classic</span>
+      <img src="https://i.ibb.co/Mcfhc3g/gta4-1.jpg" alt="GTA 4 Mobile" />
+      <div class="name">GTA 4 Mobile</div>
+      <div class="meta">Version: v1.16.4 • Size: 1.7 GB</div>
+      <div class="tags"><span class="tag">Google Play</span><span class="tag">Apple</span></div>
+      <div class="cta"><a href="#" class="ghost">Maelezo</a><a href="#" class="primary">Download</a></div>
+    </article>
+  </section>
+</body>
+</html>
+<!-- WhatsApp Pill Button -->
+<div class="whatsapp-pill">
+  <a href="https://wa.me/255628049786?text=Hello%20StreetKings%20Team!" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    <span>Chat on WhatsApp</span>
+  </a>
+</div>
+
+<!-- Email Badge -->
+<div class="email-badge" style="background:#12141b; border:1px solid #00ffd5; border-radius:14px; padding:20px; max-width:500px; margin:30px auto; text-align:center; box-shadow:0 0 12px #00ffd5;">
+  <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:10px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width:22px; height:22px; filter:drop-shadow(0 0 4px #00ffd5);" />
+    <div style="font-size:15px; font-weight:700; color:#00ffd5;">Email</div>
+  </div>
+  <div style="font-size:14px; color:#e6e9ef;">vannygeeh@gmail.com</div>
+  <p style="margin-top:10px; font-size:13px; color:#cbd2db;">Send us a message for support, feedback, or to request a custom modded game. We respond quickly and respectfully.</p>
+</div>
+
+<!-- Social Media Icons -->
+<div class="socials" style="display:flex; gap:14px; justify-content:center; margin:30px 0;">
+  <a href="https://youtube.com/@ongveeh360" target="_blank" style="width:32px; height:32px; background:#0f1624; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width:18px; height:18px;" />
+  </a>
+  <a href="https://www.instagram.com/vinp269" target="_blank" style="width:32px; height:32px; background:#0f1624; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" style="width:18px; height:18px;" />
+  </a>
+  <a href="https://www.tiktok.com/@toxic_vinny360" target="_blank" style="width:32px; height:32px; background:#0f1624; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" style="width:18px; height:18px;" />
+  </a>
+  <a href="https://github.com/streetkings360" target="_blank" style="width:32px; height:32px; background:#0f1624; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width:18px; height:18px;" />
+  </a>
+</div>
+
+<!-- Footer -->
+<footer style="text-align:center; color:#aaa; padding:20px; font-size:14px;">
+  <p>© 2025 STREETKINGS — All rights reserved.</p>
+  <p style="font-size:12px; color:#777;">Built with pride • Fast, Clean, Bold • Stay connected</p>
+</footer>
+
+<!-- WhatsApp Pill CSS -->
+<style>
+.whatsapp-pill {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 20px; /* imepandishwa juu kidogo */
+}
+.whatsapp-pill a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #001014;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.whatsapp-pill a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.9);
+}
+.whatsapp-pill img {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 0 1px #fff);
+}
+</style>
